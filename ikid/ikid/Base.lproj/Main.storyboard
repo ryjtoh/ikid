@@ -16,31 +16,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bad Joke" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="D1R-DY-xI1">
-                                <rect key="frame" x="26" y="438" width="362" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5G7-TK-ngL">
-                                <rect key="frame" x="180" y="732" width="54" height="31"/>
+                                <rect key="frame" x="183.5" y="732" width="47" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Next"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Flip"/>
+                                <connections>
+                                    <action selector="switchViews:" destination="BYZ-38-t0r" eventType="touchUpInside" id="add-aW-ZqM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="D1R-DY-xI1" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="HFf-wO-eaH"/>
                             <constraint firstItem="5G7-TK-ngL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="L1E-i3-h13"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5G7-TK-ngL" secondAttribute="bottom" constant="50" id="fc7-gU-m9s"/>
-                            <constraint firstItem="D1R-DY-xI1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ghg-cA-8lx"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Bad" image="trash.fill" catalog="system" id="GW3-BR-0KJ"/>
-                    <connections>
-                        <outlet property="badJoke" destination="D1R-DY-xI1" id="QtE-Wi-0bk"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,6 +44,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Kxa-LO-cqm" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YIL-pd-3Qi">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -133,24 +126,147 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scA-Xb-n7c">
-                                <rect key="frame" x="193" y="440" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                <connections>
-                                    <action selector="switchViews:" destination="LxL-Z9-N1f" eventType="touchUpInside" id="fr1-Kv-uYu"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Good Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANz-DV-OUq">
+                                <rect key="frame" x="156" y="438" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Tdg-iQ-j2A"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ANz-DV-OUq" firstAttribute="centerX" secondItem="Tdg-iQ-j2A" secondAttribute="centerX" id="4bC-L0-X6p"/>
+                            <constraint firstItem="ANz-DV-OUq" firstAttribute="centerY" secondItem="Tdg-iQ-j2A" secondAttribute="centerY" id="Lhl-dM-TRB"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="goodAnswer" destination="ANz-DV-OUq" id="X3g-qL-SUh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZDS-tZ-ozl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="LxL-Z9-N1f" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-1152" y="1514"/>
+        </scene>
+        <!--Pun1VC-->
+        <scene sceneID="Fyy-1g-jSf">
+            <objects>
+                <viewController storyboardIdentifier="PunSetup" id="UhY-5Z-e8I" customClass="Pun1VC" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sSx-rD-rIF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Good Pun" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9z2-3f-l4u">
+                                <rect key="frame" x="169" y="438" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fqu-O3-SfH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9z2-3f-l4u" firstAttribute="centerY" secondItem="fqu-O3-SfH" secondAttribute="centerY" id="jjr-yR-KFm"/>
+                            <constraint firstItem="9z2-3f-l4u" firstAttribute="centerX" secondItem="fqu-O3-SfH" secondAttribute="centerX" id="pqn-4k-CKR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="goodPun" destination="9z2-3f-l4u" id="QRE-VI-HT3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SsP-3q-j3Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-313" y="1513"/>
+        </scene>
+        <!--Pun2VC-->
+        <scene sceneID="JPL-kX-RAL">
+            <objects>
+                <viewController storyboardIdentifier="PunPunchline" id="dA0-nb-KlE" customClass="Pun2VC" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GLX-yv-egm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Good Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MnL-Ew-4nY">
+                                <rect key="frame" x="156" y="438" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FdA-Hb-S61"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MnL-Ew-4nY" firstAttribute="centerX" secondItem="FdA-Hb-S61" secondAttribute="centerX" id="Pnq-sv-5Oo"/>
+                            <constraint firstItem="MnL-Ew-4nY" firstAttribute="centerY" secondItem="FdA-Hb-S61" secondAttribute="centerY" id="siE-63-xKj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="goodAnswer" destination="MnL-Ew-4nY" id="IFB-RG-RDR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ASP-0d-0zT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="371.01449275362324" y="1512.7232142857142"/>
+        </scene>
+        <!--Bad1VC-->
+        <scene sceneID="BLS-er-FWL">
+            <objects>
+                <viewController storyboardIdentifier="BadSetup" id="BTj-9H-pF6" customClass="Bad1VC" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ftG-W5-5wq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bad Joke" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKb-5G-aHF">
+                                <rect key="frame" x="172" y="438" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Y9C-Cu-fc0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lKb-5G-aHF" firstAttribute="centerX" secondItem="Y9C-Cu-fc0" secondAttribute="centerX" id="nGB-gg-sTf"/>
+                            <constraint firstItem="lKb-5G-aHF" firstAttribute="centerY" secondItem="Y9C-Cu-fc0" secondAttribute="centerY" id="ntZ-eL-ica"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="badJoke" destination="lKb-5G-aHF" id="TIF-aT-VZI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QBH-JD-WtQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1109" y="1513"/>
+        </scene>
+        <!--Bad2VC-->
+        <scene sceneID="t6U-Mo-kwl">
+            <objects>
+                <viewController storyboardIdentifier="BadPunchline" id="bhs-OA-kjN" customClass="Bad2VC" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8SS-YH-1TV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bad Punchline" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAF-B4-oTu">
+                                <rect key="frame" x="153" y="438" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pGc-JX-Er8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FAF-B4-oTu" firstAttribute="centerX" secondItem="pGc-JX-Er8" secondAttribute="centerX" id="6qv-IY-qts"/>
+                            <constraint firstItem="FAF-B4-oTu" firstAttribute="centerY" secondItem="pGc-JX-Er8" secondAttribute="centerY" id="9Nx-Ec-8th"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="badPunchline" destination="FAF-B4-oTu" id="v6m-JP-d6d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IHq-Dj-ggh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1772" y="1513"/>
         </scene>
         <!--Pun-->
         <scene sceneID="eLg-dS-mXg">
@@ -160,31 +276,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pun Joke" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fwg-jj-Byy">
-                                <rect key="frame" x="172" y="438" width="70" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbS-h5-OcP">
-                                <rect key="frame" x="180" y="732" width="54" height="31"/>
+                                <rect key="frame" x="183.5" y="732" width="47" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Next"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Flip"/>
+                                <connections>
+                                    <action selector="switchViews:" destination="cVK-k2-fU8" eventType="touchUpInside" id="EFk-Tr-txN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jje-9S-hj0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Fwg-jj-Byy" firstAttribute="centerX" secondItem="Jje-9S-hj0" secondAttribute="centerX" id="Dmj-8R-bPw"/>
-                            <constraint firstItem="Fwg-jj-Byy" firstAttribute="centerY" secondItem="Jje-9S-hj0" secondAttribute="centerY" id="XgM-aK-uTL"/>
                             <constraint firstItem="Jje-9S-hj0" firstAttribute="bottom" secondItem="fbS-h5-OcP" secondAttribute="bottom" constant="50" id="Ypd-Gy-2nP"/>
                             <constraint firstItem="fbS-h5-OcP" firstAttribute="centerX" secondItem="Jje-9S-hj0" secondAttribute="centerX" id="wQx-XR-9Ch"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pun" image="book.fill" catalog="system" id="zI8-3a-Oyq"/>
-                    <connections>
-                        <outlet property="punJoke" destination="Fwg-jj-Byy" id="rwK-31-KVR"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pKZ-do-U6T" sceneMemberID="firstResponder"/>
             </objects>

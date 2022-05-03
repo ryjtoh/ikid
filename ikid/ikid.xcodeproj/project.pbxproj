@@ -18,6 +18,10 @@
 		7A3E503C2820B28100711DA2 /* BadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3E503B2820B28100711DA2 /* BadVC.swift */; };
 		7A3E503E2820CAD900711DA2 /* Good2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3E503D2820CAD900711DA2 /* Good2VC.swift */; };
 		7A3E50402820CC9400711DA2 /* Good1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3E503F2820CC9400711DA2 /* Good1VC.swift */; };
+		7A3E50422820CFE200711DA2 /* Pun1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3E50412820CFE200711DA2 /* Pun1VC.swift */; };
+		7A3E50442820CFF000711DA2 /* Pun2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3E50432820CFF000711DA2 /* Pun2VC.swift */; };
+		7A7593F92820D98B00DB41A9 /* Bad1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7593F82820D98B00DB41A9 /* Bad1VC.swift */; };
+		7A7593FB2820D99800DB41A9 /* Bad2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7593FA2820D99800DB41A9 /* Bad2VC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		7A3E503B2820B28100711DA2 /* BadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadVC.swift; sourceTree = "<group>"; };
 		7A3E503D2820CAD900711DA2 /* Good2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Good2VC.swift; sourceTree = "<group>"; };
 		7A3E503F2820CC9400711DA2 /* Good1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Good1VC.swift; sourceTree = "<group>"; };
+		7A3E50412820CFE200711DA2 /* Pun1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pun1VC.swift; sourceTree = "<group>"; };
+		7A3E50432820CFF000711DA2 /* Pun2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pun2VC.swift; sourceTree = "<group>"; };
+		7A7593F82820D98B00DB41A9 /* Bad1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bad1VC.swift; sourceTree = "<group>"; };
+		7A7593FA2820D99800DB41A9 /* Bad2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bad2VC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +85,11 @@
 				7A3E503F2820CC9400711DA2 /* Good1VC.swift */,
 				7A3E503D2820CAD900711DA2 /* Good2VC.swift */,
 				7A3E50392820B27000711DA2 /* PunVC.swift */,
+				7A3E50412820CFE200711DA2 /* Pun1VC.swift */,
+				7A3E50432820CFF000711DA2 /* Pun2VC.swift */,
 				7A3E503B2820B28100711DA2 /* BadVC.swift */,
+				7A7593F82820D98B00DB41A9 /* Bad1VC.swift */,
+				7A7593FA2820D99800DB41A9 /* Bad2VC.swift */,
 			);
 			path = ikid;
 			sourceTree = "<group>";
@@ -156,9 +168,13 @@
 				7A3E50282820ADFB00711DA2 /* ViewController.swift in Sources */,
 				7A3E50382820B25F00711DA2 /* GoodVC.swift in Sources */,
 				7A3E50242820ADFB00711DA2 /* AppDelegate.swift in Sources */,
+				7A3E50422820CFE200711DA2 /* Pun1VC.swift in Sources */,
 				7A3E50402820CC9400711DA2 /* Good1VC.swift in Sources */,
+				7A7593F92820D98B00DB41A9 /* Bad1VC.swift in Sources */,
+				7A3E50442820CFF000711DA2 /* Pun2VC.swift in Sources */,
 				7A3E503E2820CAD900711DA2 /* Good2VC.swift in Sources */,
 				7A3E50262820ADFB00711DA2 /* SceneDelegate.swift in Sources */,
+				7A7593FB2820D99800DB41A9 /* Bad2VC.swift in Sources */,
 				7A3E503C2820B28100711DA2 /* BadVC.swift in Sources */,
 				7A3E503A2820B27000711DA2 /* PunVC.swift in Sources */,
 			);

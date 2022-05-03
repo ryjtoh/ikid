@@ -1,5 +1,5 @@
 //
-//  Good2VC.swift
+//  Bad1VC.swift
 //  ikid
 //
 //  Created by Ryan Oh on 5/2/22.
@@ -7,12 +7,12 @@
 
 import UIKit
 
-class Good2VC: UIViewController {
+class Bad1VC: UIViewController {
 
-    @IBOutlet weak var goodAnswer: UILabel!
+    @IBOutlet weak var badJoke: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        goodAnswer.text = "Reality"
+        badJoke.text = "What's the difference between \na plum and a rabbit?"
         // Do any additional setup after loading the view.
     }
     

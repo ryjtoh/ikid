@@ -1,5 +1,5 @@
 //
-//  Good2VC.swift
+//  Pun1VC.swift
 //  ikid
 //
 //  Created by Ryan Oh on 5/2/22.
@@ -7,12 +7,12 @@
 
 import UIKit
 
-class Good2VC: UIViewController {
+class Pun1VC: UIViewController {
 
-    @IBOutlet weak var goodAnswer: UILabel!
+    @IBOutlet weak var goodPun: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        goodAnswer.text = "Reality"
+        goodPun.text = "I was wondering why the \nball was getting bigger."
         // Do any additional setup after loading the view.
     }
     
