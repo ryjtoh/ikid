@@ -9,10 +9,9 @@ import UIKit
 
 class Bad1VC: UIViewController {
 
-    @IBOutlet weak var badJoke: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        badJoke.text = "What's the difference between \na plum and a rabbit?"
+
         // Do any additional setup after loading the view.
     }
     

@@ -9,10 +9,8 @@ import UIKit
 
 class Bad2VC: UIViewController {
 
-    @IBOutlet weak var badPunchline: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        badPunchline.text = "They're both purple \nexcept the rabbit..."
         // Do any additional setup after loading the view.
     }
     
