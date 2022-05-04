@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Bad-->
+        <!--SWE-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="BadVC" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,7 +32,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5G7-TK-ngL" secondAttribute="trailing" constant="50" id="ddu-jo-w3M"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Bad" image="trash.fill" catalog="system" id="GW3-BR-0KJ"/>
+                    <tabBarItem key="tabBarItem" title="SWE" image="laptopcomputer" catalog="system" id="GW3-BR-0KJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -292,10 +292,10 @@
     </scenes>
     <resources>
         <image name="book.fill" catalog="system" width="128" height="95"/>
+        <image name="laptopcomputer" catalog="system" width="128" height="73"/>
         <image name="memept1" width="129.33332824707031" height="128"/>
         <image name="memept2" width="149.33332824707031" height="126.66666412353516"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
-        <image name="trash.fill" catalog="system" width="121" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
